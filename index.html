@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Medium Image Preview</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- <h1>Medium Featured Image Preview</h1> -->
+      <p class="message">
+        Preview your featured image before you hit the publish button on
+        <bold>Medium</bold>.
+      </p>
+      <label for="filetag">Upload Image</label>
+      <input type="file" id="filetag" name="photo" />
+      <div id="preview-container">
+        <div src="" id="preview-large"></div>
+        <div src="" id="preview-medium"></div>
+        <div src="" id="preview-small"></div>
+        <div src="" id="preview-xsmall"></div>
+      </div>
+    </div>
+    <img src="homepage.png" alt="Screenshot of Medium Homepage" />
+  </body>
+  <script src="main.js"></script>
+</html>

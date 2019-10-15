@@ -1,0 +1,130 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+img {
+  width: 64%;
+  box-shadow: 1px 2px 10px gray;
+}
+
+h1 {
+  margin: 0;
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.message {
+  padding-left: 5px;
+  font-size: 1.2rem;
+}
+
+.main {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  padding: 10px;
+}
+
+bold {
+  font-weight: 700;
+}
+
+label {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #00cc99;
+  font-size: 1rem;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 1px 1px 5px lightgray;
+}
+
+#filetag {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#preview-large,
+#preview-medium,
+#preview-small,
+#preview-xsmall {
+  margin-top: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#preview-container {
+  display: none;
+}
+
+#preview-large {
+  height: 150px;
+  width: 448.047px;
+}
+
+#preview-large::before {
+  content: "Large **size may differ depending on the length of title and subtitle";
+  background-color: pink;
+  font-size: 0.7rem;
+}
+
+#preview-medium {
+  height: 150px;
+  width: 322.988px;
+}
+
+#preview-medium::before {
+  content: "Medium **size may differ depending on the length of title and subtitle";
+  background-color: pink;
+  font-size: 0.7rem;
+}
+#preview-small {
+  height: 151.992px;
+  width: 151.484px;
+  display: inline-block;
+}
+
+#preview-small::before {
+  content: "Small **size may differ depending on the length of title and subtitle";
+  background-color: pink;
+  font-size: 0.7rem;
+}
+
+#preview-xsmall {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 10px;
+}
+
+#preview-xsmall:before {
+  content: "Extra-small";
+  background-color: pink;
+  font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  img {
+    display: none;
+  }
+
+  body {
+    display: inline-block;
+  }
+}
